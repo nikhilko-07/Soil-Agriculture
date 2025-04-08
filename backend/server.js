@@ -24,7 +24,7 @@ app.get("/check",(req, res)=>{
 
 
 const database = async()=>{
-    const connectDB = await mongoose.connect("mongodb+srv://nikhil:nikhil@cluster0.07hcy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+    const connectDB = await mongoose.connect("MONGO_URL");
     console.log("connected to databse")
 }
 database();
